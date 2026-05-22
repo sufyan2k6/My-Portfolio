@@ -2,6 +2,7 @@
 
 import { MessageSquare, Layout, Cpu, Code, Zap } from "lucide-react";
 import RadialOrbitalTimeline, { TimelineItem } from "@/components/ui/radial-orbital-timeline";
+import { ThreeDAnimatedHeading, ThreeDSubHeading } from "@/components/ui/three-d-animated-heading";
 
 const projectData: TimelineItem[] = [
   {
@@ -65,10 +66,9 @@ export function ProjectsSection() {
   return (
     <section className="bg-black py-24 border-t border-neutral-900 overflow-hidden">
       <div className="max-w-7xl mx-auto px-6 mb-16 text-center md:text-left">
-        <h2 className="text-4xl md:text-6xl font-bold font-mono tracking-[0.2em] uppercase text-white">
-          <span className="text-[#C3E41D]">PROJECTS</span>
-        </h2>
+        <ThreeDAnimatedHeading text="" accentText="PROJECTS" className="flex md:justify-start justify-center" />
         <div className="w-24 h-1 bg-[#C3E41D] mt-4 mx-auto md:mx-0"></div>
+        <ThreeDSubHeading text="AI Chatbot" className="mt-6 flex md:justify-start justify-center" />
         <p className="mt-6 text-neutral-500 font-mono text-sm max-w-xl">
           <span className="block mt-1 text-[#C3E41D]/60 animate-pulse uppercase tracking-widest font-bold">CLICK A NODE TO EXPAND.</span>
         </p>

@@ -3,6 +3,7 @@
 import React from 'react';
 import { Github, Linkedin, Mail, Phone, ExternalLink } from 'lucide-react';
 import { motion } from 'motion/react';
+import { ThreeDAnimatedHeading } from '@/components/ui/three-d-animated-heading';
 
 const contactLinks = [
   {
@@ -49,12 +50,10 @@ export function ContactSection() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="mb-16"
+            className="mb-16 w-full flex flex-col items-center"
           >
-            <h2 className="text-5xl md:text-8xl font-bold font-mono tracking-tighter uppercase text-white mb-6">
-              GET IN <span className="text-[#C3E41D]">TOUCH</span>
-            </h2>
-            <div className="w-32 h-2 bg-[#C3E41D] mx-auto"></div>
+            <ThreeDAnimatedHeading text="GET IN" accentText="TOUCH" className="text-5xl md:text-8xl font-bold font-mono tracking-tighter uppercase text-white mb-6 flex justify-center text-center" />
+            <div className="w-32 h-2 bg-[#C3E41D] mx-auto mt-4"></div>
           </motion.div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 w-full max-w-6xl">

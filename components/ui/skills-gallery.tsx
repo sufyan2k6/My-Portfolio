@@ -4,6 +4,7 @@ import React from 'react';
 import { RadialScrollGallery } from '@/components/ui/portfolio-and-image-gallery';
 import { Badge } from '@/components/ui/badge';
 import { Code, FileCode, Github, Zap, Users, Binary } from 'lucide-react';
+import { ThreeDAnimatedHeading } from '@/components/ui/three-d-animated-heading';
 
 const skills = [
   { id: 1, title: "C Programming", cat: "Programming", icon: <Binary className="w-16 h-16 md:w-20 md:h-20" /> },
@@ -18,10 +19,8 @@ export function SkillsGallery() {
     <section className="bg-black py-24 text-white overflow-hidden border-t border-neutral-900">
       <div className="max-w-7xl mx-auto px-6 mb-12 flex flex-col md:flex-row items-center justify-between">
         <div className="space-y-4">
-          <h2 className="text-4xl md:text-6xl font-bold font-mono tracking-[0.2em] uppercase">
-            MY <span className="text-[#C3E41D]">SKILLS</span>
-          </h2>
-          <div className="w-24 h-1 bg-[#C3E41D]"></div>
+          <ThreeDAnimatedHeading text="MY" accentText="SKILLS" className="flex md:justify-start justify-center" />
+          <div className="w-24 h-1 bg-[#C3E41D] mx-auto md:mx-0"></div>
         </div>
         <div className="hidden md:block animate-bounce text-neutral-500 text-xs font-mono uppercase tracking-widest mt-8 md:mt-0">
           ↓ Scroll to rotate

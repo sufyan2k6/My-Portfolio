@@ -3,6 +3,7 @@
 import React from 'react';
 import { Trophy, Star, Award } from 'lucide-react';
 import { motion } from 'motion/react';
+import { ThreeDAnimatedHeading } from '@/components/ui/three-d-animated-heading';
 
 const achievements = [
   {
@@ -35,9 +36,7 @@ export function AchievementsStrip() {
   return (
     <section className="bg-black py-24 border-t border-neutral-900 overflow-hidden">
       <div className="max-w-7xl mx-auto px-6 mb-16 text-center md:text-left">
-        <h2 className="text-4xl md:text-6xl font-bold font-mono tracking-[0.2em] uppercase text-white">
-          <span className="text-[#C3E41D]">ACHIEVEMENTS</span>
-        </h2>
+        <ThreeDAnimatedHeading text="" accentText="ACHIEVEMENTS" className="flex md:justify-start justify-center" />
         <div className="w-24 h-1 bg-[#C3E41D] mt-4 mx-auto md:mx-0"></div>
       </div>
 

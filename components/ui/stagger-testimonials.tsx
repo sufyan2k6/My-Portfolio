@@ -3,6 +3,7 @@
 import React, { useState, useEffect } from 'react';
 import { ChevronLeft, ChevronRight, GraduationCap, School, BookOpen } from 'lucide-react';
 import { cn } from '@/lib/utils';
+import { ThreeDAnimatedHeading } from '@/components/ui/three-d-animated-heading';
 
 const SQRT_5000 = Math.sqrt(5000);
 
@@ -165,10 +166,8 @@ export const StaggerJourney: React.FC = () => {
   return (
     <section className="relative w-full py-24 overflow-hidden bg-black">
       <div className="max-w-7xl mx-auto px-6 mb-12 relative z-20">
-         <h2 className="text-4xl md:text-6xl font-bold font-mono tracking-[0.2em] text-white uppercase text-center md:text-left mb-4">
-            MY <span className="text-[#C3E41D]">JOURNEY</span>
-         </h2>
-         <div className="w-24 h-1 bg-[#C3E41D] mx-auto md:mx-0"></div>
+        <ThreeDAnimatedHeading text="MY" accentText="JOURNEY" className="flex md:justify-start justify-center mb-4" />
+        <div className="w-24 h-1 bg-[#C3E41D] mx-auto md:mx-0"></div>
       </div>
 
       <div
